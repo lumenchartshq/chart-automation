@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "removeComments": false
+  },
+  "include": [],
+  "files": [
+    "src/index.ts",
+    "src/core-contracts/index.ts",
+    "src/sdk/index.ts",
+    "src/sdk/testing.ts"
+  ]
+}

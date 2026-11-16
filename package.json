@@ -1,0 +1,66 @@
+{
+  "name": "@lumencharts/chart-automation",
+  "version": "0.1.0",
+  "description": "Automation SDK for Lumen Charts: typed chart commands, contracts, schemas and AI model tools.",
+  "license": "Apache-2.0",
+  "homepage": "https://docs.lumencharts.com/charting-library/automation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumenchartshq/chart-automation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lumenchartshq/chart-automation/issues"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
+  "exports": {
+    ".": "./src/index.ts",
+    "./contracts": "./src/core-contracts/index.ts",
+    "./sdk": "./src/sdk/index.ts",
+    "./sdk/testing": "./src/sdk/testing.ts"
+  },
+  "types": "./src/index.ts",
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js",
+        "default": "./dist/index.js"
+      },
+      "./contracts": {
+        "types": "./dist/core-contracts/index.d.ts",
+        "import": "./dist/core-contracts/index.js",
+        "default": "./dist/core-contracts/index.js"
+      },
+      "./sdk": {
+        "types": "./dist/sdk/index.d.ts",
+        "import": "./dist/sdk/index.js",
+        "default": "./dist/sdk/index.js"
+      },
+      "./sdk/testing": {
+        "types": "./dist/sdk/testing.d.ts",
+        "import": "./dist/sdk/testing.js",
+        "default": "./dist/sdk/testing.js"
+      }
+    },
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "build": "node -e \"require('node:fs').rmSync('dist',{recursive:true,force:true})\" && tsc -p tsconfig.build.json",
+    "prepack": "pnpm run build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.10"
+  },
+  "packageManager": "pnpm@11.24.0",
+  "engines": {
+    "node": ">=20"
+  }
+}

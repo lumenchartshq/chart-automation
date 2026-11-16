@@ -1,0 +1,22 @@
+# Changelog
+
+Each release of `@lumencharts/chart-automation` has a section here. The notes
+for a version also appear on its GitHub release.
+
+## 0.1.0
+
+First public release of the Lumen Charts automation SDK.
+
+- Typed command sessions for a chart: drawings, studies, navigation, chart
+  settings, workspace, data reads and capture, with an effect policy per
+  session.
+- `defineCommand` and `field` for your own commands, with JSON Schemas
+  generated from the same definitions.
+- `createAutomationTools` turns a session into model tools for an AI
+  assistant, with instructions from the registered commands.
+- `connectAutomation` and `serveAutomation` run a session for a model on your
+  server.
+- `@lumencharts/chart-automation/sdk/testing` provides `createTestAutomation`
+  and fakes for testing your commands without a chart.
+- `@lumencharts/chart-automation/contracts` holds the chart document, binding,
+  time range and error types shared with the chart.
