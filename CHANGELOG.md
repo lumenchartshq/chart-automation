@@ -3,6 +3,12 @@
 Each release of `@lumencharts/chart-automation` has a section here. The notes
 for a version also appear on its GitHub release.
 
+## 0.1.2
+
+No code changes from 0.1.1. The README now has a quick start you can run
+without a chart, a step-by-step guide to using the SDK with AI assistants,
+usage examples and a summary of the commands, limits and error codes.
+
 ## 0.1.1
 
 No code changes from 0.1.0. This version is published from the release
