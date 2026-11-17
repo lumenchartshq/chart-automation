@@ -575,7 +575,7 @@ Bug reports and feature ideas are welcome as
 include the SDK and chart versions and a small example that reproduces it. We
 are not accepting pull requests yet; [CONTRIBUTING.md](CONTRIBUTING.md)
 explains how releases are made. Report security issues privately to
-oss@lumencharts.com.
+support@lumencharts.com.
 
 ## License
 

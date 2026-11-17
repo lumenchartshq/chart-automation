@@ -3,6 +3,11 @@
 Each release of `@lumencharts/chart-automation` has a section here. The notes
 for a version also appear on its GitHub release.
 
+## 0.1.3
+
+No code changes from 0.1.2. Security reports now go to
+support@lumencharts.com; the address in earlier versions does not exist.
+
 ## 0.1.2
 
 No code changes from 0.1.1. The README now has a quick start you can run
